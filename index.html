@@ -1,0 +1,335 @@
+
+<style>* --- GENEL AYARLAR VE DEĞİŞKENLER --- */
+:root {
+    --primary-color: #8B0000; /* Koyu Kırmızı / Bordo */
+    --secondary-color: #D4AF37; /* Altın Sarısı */
+    --dark-bg: #1a1a1a;
+    --darker-bg: #111111;
+    --text-color: #e0e0e0;
+    --heading-font: 'Cinzel', serif;
+    --body-font: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #fff;
+}
+
+/* --- HEADER / MENÜ --- */
+header {
+    background: rgba(17, 17, 17, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 1rem 10%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+/* --- HERO BÖLÜMÜ --- */
+#hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('https://images.pexels.com/photos/7440375/pexels-photo-7440375.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 5%;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+#hero h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.cta-button {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #a52a2a; /* Lighter Red */
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+
+/* --- ABOUT & FOOTER BÖLÜMLERİ --- */
+#about {
+    background-color: var(--darker-bg);
+}
+
+#about p {
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background-color: var(--darker-bg);
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.contact-info {
+    margin: 2rem 0;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 2rem;
+}
+
+/* --- ÖZELLİKLER BÖLÜMÜ --- */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background-color: var(--darker-bg);
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: rgba(212, 175, 55, 0.4);
+}
+
+.feature-card .icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+/* --- MOBİL UYUMLULUK (RESPONSIVE) --- */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    #hero h1 {
+        font-size: 3rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav .logo {
+        margin-bottom: 1rem;
+    }
+    
+    nav ul li {
+        margin: 0 0.7rem;
+    }
+    
+    .container {
+        width: 90%;
+    }
+}</style>
+
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahtın Kaderi - Strateji Oyunu</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Menü -->
+    <header>
+        <nav>
+            <a href="#hero" class="logo">Tahtın Kaderi</a>
+            <ul>
+                <li><a href="#about">Oyun Hakkında</a></li>
+                <li><a href="#features">Özellikler</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section / Ana Karşılama Ekranı -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1>TAHTIN KADERİ</h1>
+                <p>Bir imparatorluğun yükü omuzlarında. Vereceğin her karar, hanedanının sonunu getirebilir.</p>
+                <a href="#" class="cta-button">YAKINDA STEAM'DE</a>
+            </div>
+        </section>
+
+        <!-- About Section / Oyun Hakkında -->
+        <section id="about">
+            <div class="container">
+                <h2>Hükmünü Ver, Kaderini Belirle</h2>
+                <p>
+                    Tahtın Kaderi, Osmanlı İmparatorluğu'nun en çalkantılı dönemlerinde geçen, Reigns tarzı bir kart tabanlı strateji oyunudur. Padişah olarak karşınıza gelen fermanları, dilekçeleri ve olayları sola veya sağa kaydırarak kararlar alırsınız. Her seçiminiz; devletin hazinesini, halkın sadakatini, ordunun gücünü ve saraydaki entrikaları doğrudan etkiler. Dengeyi kurabilecek misin, yoksa tahtını ve itibarını kaybedip tarihin tozlu sayfalarına mı karışacaksın?
+                </p>
+            </div>
+        </section>
+
+        <!-- Features Section / Özellikler -->
+        <section id="features">
+            <div class="container">
+                <h2>Saltanatın Dört Sütunu</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="icon">⚔️</div>
+                        <h3>Ordu ve Fetih</h3>
+                        <p>Ordunu sefere gönder, yeni topraklar fethet veya isyanları bastır. Güçlü bir ordu, düşmanlarını korkutur ama hazineyi boşaltır.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">💰</div>
+                        <h3>Hazine-i Hümayun</h3>
+                        <p>Vergileri ayarla, ticareti canlandır ve saray masraflarını kontrol et. Boş bir hazine, en sadık kulları bile isyana sürükler.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">🙏</div>
+                        <h3>Halkın Rızası</h3>
+                        <p>Adaletle hükmet, camiler ve şifahaneler inşa et. Halkının sevgisini kazan, ama onları çok şımartma.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">📜</div>
+                        <h3>Saray Entrikaları</h3>
+                        <p>Vezirlerin, paşaların ve validelerin arasındaki güç savaşlarında tarafını seç. Yanlış bir ittifak, hançerin sırtına saplanması demektir.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer / İletişim -->
+    <footer id="contact">
+        <div class="container">
+            <h2>Bizimle İletişime Geçin</h2>
+            <p>Oyunumuzla ilgili en son haberler ve gelişmeler için bizi takip edin!</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:iletisim@tahtinkaderi.com">iletisim@tahtinkaderi.com</a></p>
+                <p><strong>Sosyal Medya:</strong> @TahtinKaderiOyunu</p>
+            </div>
+            <p class="copyright">© 2024 Tahtın Kaderi. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
