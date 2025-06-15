@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" style="background-color: #3a2f1a;">
+  <!-- Turban -->
+  <ellipse cx="200" cy="120" rx="85" ry="65" fill="#f5e6d3"/>
+  <path d="M 130 110 Q 150 90 200 95 Q 250 90 270 110" stroke="#d4af37" stroke-width="3" fill="none"/>
+  
+  <!-- Face -->
+  <circle cx="200" cy="180" r="45" fill="#cd853f"/>
+  
+  <!-- Eyes -->
+  <rect x="185" y="165" width="8" height="15" rx="2" fill="#2c1810"/>
+  <rect x="207" y="165" width="8" height="15" rx="2" fill="#2c1810"/>
+  
+  <!-- Nose -->
+  <rect x="198" y="175" width="4" height="8" rx="2" fill="#b8860b"/>
+  
+  <!-- Beard -->
+  <path d="M 170 200 Q 185 220 200 225 Q 215 220 230 200 Q 225 240 200 245 Q 175 240 170 200" fill="#f5e6d3"/>
+  
+  <!-- Body -->
+  <rect x="140" y="225" width="120" height="150" rx="10" fill="#2d5016"/>
+  
+  <!-- Decorative patterns on green robe -->
+  <g fill="#d4af37">
+    <!-- Vertical stripes -->
+    <rect x="160" y="235" width="2" height="130"/>
+    <rect x="170" y="235" width="2" height="130"/>
+    <rect x="228" y="235" width="2" height="130"/>
+    <rect x="238" y="235" width="2" height="130"/>
+    
+    <!-- Floral patterns -->
+    <g transform="translate(180, 260)">
+      <circle cx="0" cy="0" r="3"/>
+      <path d="M -3 -8 Q 0 -12 3 -8 Q 6 -5 3 0 Q 0 5 -3 0 Q -6 -5 -3 -8"/>
+    </g>
+    <g transform="translate(220, 280)">
+      <circle cx="0" cy="0" r="3"/>
+      <path d="M -3 -8 Q 0 -12 3 -8 Q 6 -5 3 0 Q 0 5 -3 0 Q -6 -5 -3 -8"/>
+    </g>
+    <g transform="translate(180, 320)">
+      <circle cx="0" cy="0" r="3"/>
+      <path d="M -3 -8 Q 0 -12 3 -8 Q 6 -5 3 0 Q 0 5 -3 0 Q -6 -5 -3 -8"/>
+    </g>
+    <g transform="translate(220, 340)">
+      <circle cx="0" cy="0" r="3"/>
+      <path d="M -3 -8 Q 0 -12 3 -8 Q 6 -5 3 0 Q 0 5 -3 0 Q -6 -5 -3 -8"/>
+    </g>
+    
+    <!-- Buttons -->
+    <circle cx="200" cy="250" r="3"/>
+    <circle cx="200" cy="270" r="3"/>
+    <circle cx="200" cy="290" r="3"/>
+  </g>
+  
+  <!-- Arms -->
+  <ellipse cx="125" cy="280" rx="15" ry="40" fill="#2d5016"/>
+  <ellipse cx="275" cy="280" rx="15" ry="40" fill="#2d5016"/>
+  
+  <!-- Hands -->
+  <circle cx="115" cy="320" r="12" fill="#cd853f"/>
+  <circle cx="285" cy="320" r="12" fill="#cd853f"/>
+  
+  <!-- Book in hand -->
+  <rect x="95" y="305" width="25" height="20" rx="2" fill="#8b4513"/>
+  <rect x="100" y="308" width="15" height="14" rx="1" fill="#deb887"/>
+  <line x1="102" y1="312" x2="113" y2="312" stroke="#8b4513" stroke-width="1"/>
+  <line x1="102" y1="316" x2="113" y2="316" stroke="#8b4513" stroke-width="1"/>
+  <line x1="102" y1="320" x2="110" y2="320" stroke="#8b4513" stroke-width="1"/>
+</svg> 

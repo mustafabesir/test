@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" style="background-color: #3a2f1a;">
+  <!-- Turban -->
+  <ellipse cx="200" cy="120" rx="80" ry="60" fill="#2d5016"/>
+  <circle cx="200" cy="105" r="8" fill="#d4af37"/>
+  
+  <!-- Face -->
+  <circle cx="200" cy="175" r="40" fill="#cd853f"/>
+  
+  <!-- Eyes -->
+  <rect x="185" y="162" width="8" height="12" rx="2" fill="#2c1810"/>
+  <rect x="207" y="162" width="8" height="12" rx="2" fill="#2c1810"/>
+  
+  <!-- Nose -->
+  <rect x="198" y="172" width="4" height="8" rx="2" fill="#b8860b"/>
+  
+  <!-- Beard -->
+  <path d="M 175 195 Q 187 215 200 220 Q 213 215 225 195 Q 220 235 200 240 Q 180 235 175 195" fill="#f5e6d3"/>
+  
+  <!-- Body -->
+  <rect x="145" y="215" width="110" height="140" rx="8" fill="#2d5016"/>
+  
+  <!-- Decorative patterns on robe -->
+  <g fill="#d4af37">
+    <!-- Vertical stripes -->
+    <rect x="165" y="225" width="3" height="120"/>
+    <rect x="175" y="225" width="3" height="120"/>
+    <rect x="222" y="225" width="3" height="120"/>
+    <rect x="232" y="225" width="3" height="120"/>
+    
+    <!-- Floral embroidery -->
+    <g transform="translate(185, 250)">
+      <circle cx="0" cy="0" r="4"/>
+      <path d="M -4 -10 Q 0 -14 4 -10 Q 8 -6 4 0 Q 0 6 -4 0 Q -8 -6 -4 -10"/>
+    </g>
+    <g transform="translate(215, 270)">
+      <circle cx="0" cy="0" r="4"/>
+      <path d="M -4 -10 Q 0 -14 4 -10 Q 8 -6 4 0 Q 0 6 -4 0 Q -8 -6 -4 -10"/>
+    </g>
+    <g transform="translate(185, 310)">
+      <circle cx="0" cy="0" r="4"/>
+      <path d="M -4 -10 Q 0 -14 4 -10 Q 8 -6 4 0 Q 0 6 -4 0 Q -8 -6 -4 -10"/>
+    </g>
+    <g transform="translate(215, 330)">
+      <circle cx="0" cy="0" r="4"/>
+      <path d="M -4 -10 Q 0 -14 4 -10 Q 8 -6 4 0 Q 0 6 -4 0 Q -8 -6 -4 -10"/>
+    </g>
+    
+    <!-- Buttons -->
+    <circle cx="200" cy="240" r="3"/>
+    <circle cx="200" cy="260" r="3"/>
+    <circle cx="200" cy="280" r="3"/>
+    <circle cx="200" cy="300" r="3"/>
+  </g>
+  
+  <!-- Arms -->
+  <ellipse cx="130" cy="270" rx="12" ry="35" fill="#2d5016"/>
+  <ellipse cx="270" cy="270" rx="12" ry="35" fill="#2d5016"/>
+  
+  <!-- Hands -->
+  <circle cx="120" cy="305" r="10" fill="#cd853f"/>
+  <circle cx="280" cy="305" r="10" fill="#cd853f"/>
+  
+  <!-- Map/Document in hand -->
+  <rect x="100" y="290" width="30" height="25" rx="2" fill="#f5e6d3"/>
+  <g fill="#8b4513">
+    <!-- Map markings -->
+    <path d="M 110 300 L 115 295 L 120 300 L 115 305 Z"/>
+    <line x1="105" y1="295" x2="125" y2="295" stroke="#8b4513" stroke-width="1"/>
+    <line x1="105" y1="298" x2="125" y2="298" stroke="#8b4513" stroke-width="1"/>
+    <line x1="105" y1="301" x2="120" y2="301" stroke="#8b4513" stroke-width="1"/>
+    <line x1="105" y1="304" x2="125" y2="304" stroke="#8b4513" stroke-width="1"/>
+    <line x1="105" y1="307" x2="115" y2="307" stroke="#8b4513" stroke-width="1"/>
+  </g>
+  
+  <!-- Finger pointing -->
+  <rect x="275" y="300" width="8" height="3" fill="#cd853f"/>
+</svg> 
